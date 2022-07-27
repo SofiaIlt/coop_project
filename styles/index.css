@@ -1,0 +1,177 @@
+
+/*normalize*/
+@import url(../vendor/normalize.css);
+
+.page {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px 0;
+}
+
+.header__links {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__list {
+    list-style: none;
+}
+
+.header__list:nth-last-child() {
+    margin-right: 0;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lead {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+    margin: 36px 0 132px;
+}
+
+.lead__text {
+    display: grid;
+    gap: 54px;
+    width: 40%;
+}
+
+.lead__subtitle {
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    color: #fecda7;
+}
+
+.lead__title {
+    margin: 0;
+    padding: 0;
+}
+
+.lead__image {
+    width: 355px;
+    height: 355px;
+}
+
+.places {
+    max-width: 100%;
+    background-color: #f2f2f2;
+}
+
+.place {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 640px));
+}
+
+.place__image {
+    grid-column: 1;
+    grid-row: 1/3;
+    width: 640px;
+    height: 540px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.place__image:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.place__title {
+    margin: 68px 0 0 72px;
+    padding: 0;
+}
+
+.place__paragraphs {
+    display: grid;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+.place__paragraph {
+    margin: 0 0 0 72px;
+    padding: 0;
+    max-width: 360px;
+}
+
+.paragraph-alone {
+    align-self: flex-end;
+    margin-bottom: 56px;
+}
+
+.place__paragraph:nth-child(1) {
+    align-self: flex-end;
+}
+
+.reviews {
+    width: 90%;
+    margin: 136px 0 150px;
+}
+
+.reviews__subtitle {
+    margin: 0;
+    padding: 0;
+    max-width: 35px;
+    color: #fecda7;
+}
+
+.reviews__title {
+    margin: 36px 0 120px;
+    padding: 0;
+    max-width: 400px;
+}
+
+.reviews__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.review__items {
+    list-style: none;
+}
+
+.review__title {
+    margin: 0 0 28px;
+    padding: 0;
+}
+
+.review__paragraph {
+    margin: 0;
+    padding: 0;
+    max-width: 235px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 620px;
+    background-color: #fecda7;
+}
