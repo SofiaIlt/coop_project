@@ -20,4 +20,4 @@
 - Анимация по скроллу
 - Меню "бургер" в моб версии
 
-[Проект на GitHub Pages](https://sofiailt.github.io/coop_project/)
+[Проект на GitHub Pages](https://sofiailt.github.io/coop_project/pages/)
