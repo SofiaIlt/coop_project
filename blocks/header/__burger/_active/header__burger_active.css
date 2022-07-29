@@ -1,0 +1,10 @@
+.header__burger_active {
+  background: url(../../../../images/icons/cross.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  transition: all .3s ease;
+}

@@ -1,0 +1,13 @@
+.lead__text {
+  flex: 0 0 50%;
+  transition: all 1s ease;
+}
+
+@media (max-width: 767px) {
+  .lead__text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 calc(16px + (70 - 16) * ((100vw - 320px) / (1280 - 320)));
+  }
+}

@@ -1,0 +1,20 @@
+.place__title {
+  flex: 1;
+  font-weight: 500;
+  font-size: 36px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1280px) {
+  .place__title {
+    font-size: calc(27px + (36 - 27) * ((100vw - 768px) / (1280 - 768)));
+  }
+}
+
+@media (max-width: 767px) {
+  .place__title {
+    font-size: 27px;
+    margin-bottom: calc(50px + (80 - 50) * ((100vw - 320px) / (768 - 320)));
+  }
+}

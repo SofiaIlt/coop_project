@@ -5,27 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="Autor" content="Sofia Iltner & Konstantin Petrov">
-  <link rel="shortcut icon" href="./images/favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./images/favicons/site.webmanifest">
+  <link rel="shortcut icon" href="../images/favicons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../images/favicons/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>Куда я поеду</title>
-  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body class="page">
   <header class="header">
-    <nav>
+    <div class="header__burger"></div>
+    <nav class="header__menu">
       <ul class="header__links">
-        <li class="header__list"><a href="#" class="header__link">Мечты</a></li>
-        <li class="header__list"><a href="#" class="header__link">Ожидания</a></li>
-        <li class="header__list"><a href="#" class="header__link">Реальность</a></li>
+        <li><a href="#" class="header__link">Мечты</a></li>
+        <li><a href="#" class="header__link">Ожидания</a></li>
+        <li><a href="#" class="header__link">Реальность</a></li>
       </ul>
+      <a href="#" class="header__link">Пожаловаться</a>
     </nav>
-    <a href="#" class="header__link">Пожаловаться</a>
   </header>
   <main>
 
@@ -40,10 +41,10 @@
     <section class="places">
 
       <article class="place">
-        <div class="place_box">
-          <img src="./images/places-forest.jpg" class="place__image" alt="Водопад в лесу">
+        <div class="place__box">
+          <img src="../images/places-forest.jpg" class="place__image" alt="Водопад в лесу">
         </div>
-        <div class="place_box">
+        <div class="place__box">
           <h2 class="place__title">Поеду в лес</h2>
           <p class="place__paragraph">Лес — экологическая система, биоценоз, в которой главной жизненной формой
             являются деревья.</p>
@@ -54,10 +55,10 @@
         </div>
       </article>
       <article class="place wow animate__animated animate__fadeInUp">
-        <div class="place_box">
-          <img src="./images/places-mountains.jpg" class="place__image" alt="Горы">
+        <div class="place__box">
+          <img src="../images/places-mountains.jpg" class="place__image" alt="Горы">
         </div>
-        <div class="place_box">
+        <div class="place__box">
           <h2 class="place__title">Поеду в горы</h2>
           <p class="place__paragraph">Горные системы занимают 64 % поверхности Азии, 36 % — Северной Америки, 25 % —
             Европы, 22 % — Южной Америки,
@@ -67,10 +68,10 @@
         </div>
       </article>
       <article class="place wow animate__animated animate__fadeInUp">
-        <div class="place_box">
-          <img src="./images/places-black-sea.jpg" class="place__image" alt="Девушка на Чёрном море">
+        <div class="place__box">
+          <img src="../images/places-black-sea.jpg" class="place__image" alt="Девушка на Чёрном море">
         </div>
-        <div class="place_box">
+        <div class="place__box">
           <h2 class="place__title">Поеду на Чёрное море</h2>
           <p class="place__paragraph">Я уплыву туда, где ни разу я не был, туда, где никто раньше не был.
             Никто и никогда раньше не был, я уплыву. Я позову тебя смотреть на синее небо и пить по капле синее небо, и
@@ -84,11 +85,10 @@
 
     <section class="reviews">
 
-      <p class="reviews__subtitle  wow animate__animated animate__fadeInUp">Люди</p>
-      <h2 class="reviews__title  wow animate__animated animate__fadeInUp">Что говорят и говорили люди о путешествиях
-      </h2>
+      <p class="reviews__subtitle wow animate__animated animate__fadeInUp">Люди</p>
+      <h2 class="reviews__title wow animate__animated animate__fadeInUp">Что говорят и говорили люди о путешествиях</h2>
 
-      <ul class="reviews__list  wow animate__animated animate__fadeInUp">
+      <ul class="reviews__list wow animate__animated animate__fadeInUp">
 
         <li class="review__items">
           <blockquote class="review__quote">
@@ -120,7 +120,6 @@
               рискованное предприятие.</p>
           </blockquote>
         </li>
-
       </ul>
 
     </section>
@@ -130,8 +129,8 @@
     <p class="footer__copyright">&copy; 2022</p>
   </footer>
 
-  <script src="./script.js"></script>
-  <script src="./vendor/wow.min.js"></script>
+  <script src="../Scripts/script.js"></script>
+  <script src="../vendor/wow.min.js"></script>
   <script>
     new WOW({ offset: 200 }).init();
   </script>
