@@ -1,0 +1,29 @@
+.reviews__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 120px 0;
+  padding: 0;
+}
+
+@media (max-width: 1280px) {
+  .reviews__list {
+    margin: calc(75px + (120 - 75) * ((100vw - 768px) / (1280 - 768))) 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .reviews__list {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews__list {
+    margin: 60px 0;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 620px;
+  background-color: #fecda7;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    height: calc(200px + (620 - 200) * ((100vw - 320px) / (1280 - 320)));
+  }
+}

@@ -1,0 +1,15 @@
+.header__links {
+  list-style: none;
+  display: flex;
+  gap: calc(24px + (36 - 24) * ((100vw - 768px) / (1280 - 768)));
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .header__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+  }
+}

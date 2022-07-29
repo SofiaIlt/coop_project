@@ -1,0 +1,15 @@
+p, h1, h2, cite, a {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.page {
+  max-width: 100vw;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  line-height: 1.6;
+}

@@ -1,0 +1,6 @@
+.header__menu_active {
+  z-index: 1;
+  display: flex;
+  opacity: 1;
+  transition: all 1s ease;
+}
